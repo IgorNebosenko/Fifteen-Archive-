@@ -27,13 +27,13 @@ namespace Game.Additional
                     throw new CantFindGlobalObj(
                         "Can't find GO for getting MultiLangCore");
                 core = tmp.GetComponent<MultiLangCore>();
-                do
-                {
-                    await Task.Delay(100);
-                }
-                while (!core.IsLoaded);
 
             }
+            while (!core.IsLoaded)
+            {
+                await Task.Delay(10);
+            }
+
             core.textFieldsContainer.Add(this);
             SetText();
         }

@@ -12,7 +12,7 @@ namespace Game.Additional
     /// Core of multilanguage realisation. 
     /// Must be call before main menu creates, but after properties 
     /// </summary>
-    public class MultiLangCore : MonoBehaviour
+    public class MultiLangCore : MonoBehaviour, IGlobalObject
     {
         /// <summary>
         /// Class of language data
