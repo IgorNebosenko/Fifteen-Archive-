@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Runtime.Serialization.Json;
 using UnityEngine;
 using UnityEditor;
@@ -8,8 +9,13 @@ namespace Game.Additional
     /// <summary>
     /// Class of properties game
     /// </summary>
+    [InitializeOnLoad]
     public static class Properties
     {
+        /// <summary>
+        /// Container of properties
+        /// </summary>
+        [Serializable]
         class PropContainer
         {
             /// <summary>
@@ -22,29 +28,53 @@ namespace Game.Additional
             public SystemLanguage currLang;
         }
 
+        /// <summary>
+        /// Instance of container
+        /// </summary>
         static PropContainer container;
+        /// <summary>
+        /// Instance of serializer
+        /// </summary>
         static DataContractJsonSerializer serializer;
 
-        public static string PathToProps
+        /// <summary>
+        /// String with path file of props
+        /// </summary>
+        static string PathToProps
         {
             get
             {
                 return Path.Combine(Application.persistentDataPath, "properties.json");
             }
         }
-    
+        /// <summary>
+        /// Property, which provides get and set current language of game
+        /// </summary>
+        public static SystemLanguage CurrLang
+        {
+            get
+            {
+                return container.currLang;
+            }
+            set
+            {
+                container.currLang = value;
+            }
+        }
+
         /// <summary>
         /// CTOR
         /// </summary>
         static Properties()
         {
-                serializer = new DataContractJsonSerializer(typeof(PropContainer));
-                TestExiting();
+            serializer = new DataContractJsonSerializer(typeof(PropContainer));
+            container = new PropContainer();
+            TestExiting();
         }
 
-            /// <summary>
-            /// Method of testing is file props.json exists
-            /// </summary>
+        /// <summary>
+        /// Method of testing is file properties.json exists
+        /// </summary>
         static void TestExiting()
         {
             if (File.Exists(PathToProps))
@@ -57,9 +87,10 @@ namespace Game.Additional
             else
                 CreatePropFile();
         }
-
-
-
+        /// <summary>
+        /// Method of creating default prop file. 
+        /// If fields in container added - ad them in this method
+        /// </summary>
         static void CreatePropFile()
         {
             container.gameVersion = PlayerSettings.bundleVersion;
@@ -76,13 +107,23 @@ namespace Game.Additional
         }
 
         /// <summary>
-            /// Method of writing properties to file
-            /// </summary>
+        /// Method of writing properties to file
+        /// </summary>
         public static void WriteProps()
         {
             using (FileStream fs = new FileStream(PathToProps, FileMode.Create, FileAccess.Write))
             {
                 serializer.WriteObject(fs, container);
+            }
+        }
+        /// <summary>
+        /// Method, which refreshes properties from file in real time
+        /// </summary>
+        public static void RefreshProps()
+        {
+            using (FileStream fs = new FileStream(PathToProps, FileMode.Open, FileAccess.Read))
+            {
+                container = serializer.ReadObject(fs) as PropContainer;
             }
         }
     }

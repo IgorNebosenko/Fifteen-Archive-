@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 namespace Game.Exceptions
 {
     /// <summary>
-    /// Exception, which generate when scrip can't find same object
+    /// Exception, which generates when scrip can't find same object
     /// </summary>
     public class CantFindObject : ApplicationException
     {
