@@ -33,7 +33,7 @@ namespace Game.Additional
             /// </summary>
             public string displayName;
 
-#if DEBUG
+#if UNITY_EDITOR
             /// <summary>
             /// This CTOR only for debug
             /// </summary>
@@ -187,7 +187,7 @@ namespace Game.Additional
         }
 
         //Methods only for debug
-#if DEBUG
+#if UNITY_EDITOR
         /// <summary>
         /// Path to debug files
         /// </summary>

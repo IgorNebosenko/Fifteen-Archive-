@@ -9,7 +9,6 @@ namespace Game.Additional
     /// <summary>
     /// Class of properties game
     /// </summary>
-    [InitializeOnLoad]
     public static class Properties
     {
         /// <summary>
@@ -93,7 +92,7 @@ namespace Game.Additional
         /// </summary>
         static void CreatePropFile()
         {
-            container.gameVersion = PlayerSettings.bundleVersion;
+            container.gameVersion = Application.version;
 
             if (Application.systemLanguage == SystemLanguage.Russian ||
                 Application.systemLanguage == SystemLanguage.Ukrainian)

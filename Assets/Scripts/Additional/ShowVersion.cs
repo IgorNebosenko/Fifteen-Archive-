@@ -16,7 +16,8 @@ namespace Game.Additional
             TextMeshProUGUI textObj = this.gameObject.GetComponent<TextMeshProUGUI>();
             if (textObj == null)
                 throw new CantFindObject("ShowVersion can't find TextMeshProUGUI!");
-            textObj.text = "v." + PlayerSettings.bundleVersion;
+
+            textObj.text = string.Concat("v.", Application.version);
         }
     }
 }
