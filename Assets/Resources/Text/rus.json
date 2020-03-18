@@ -1,186 +1,206 @@
 [
 	{
-		"Key":"newGame",
-		"Value":"Новая игра"
+		"Key": "newGame",
+		"Value": "Новая игра"
 	},
 	{
-		"Key":"continueGame",		
-		"Value":"Продолжить игру"
+		"Key": "continueGame",
+		"Value": "Продолжить игру"
 	},
 	{
-		"Key":"settings",
-		"Value":"Настройки"
+		"Key": "settings",
+		"Value": "Настройки"
 	},
 	{
-		"Key":"stat",
-		"Value":"Статистика"
+		"Key": "stat",
+		"Value": "Статистика"
 	},
 	{
-		"Key":"creator",
-		"Value":"Автор"
+		"Key": "creator",
+		"Value": "Автор"
 	},
 	{
-		"Key":"supportProject",
-		"Value":"Поддержать проект"
+		"Key": "supportProject",
+		"Value": "Поддержать проект"
 	},
 	{
-		"Key":"exit",
-		"Value":"Выход"
+		"Key": "exit",
+		"Value": "Выход"
 	},
 	{
-		"Key":"size",
-		"Value":"Размер:"
+		"Key": "size",
+		"Value": "Размер:"
 	},
 	{
-		"Key":"difficult",
-		"Value":"Сложность:"
+		"Key": "3x3",
+		"Value": "3x3"
 	},
 	{
-		"Key":"typeGame",
-		"Value":"Тип игры:"
+		"Key": "4x4",
+		"Value": "4x4"
 	},
 	{
-		"Key":"classicSpecks",
-		"Value":"Классические пятнашки"
+		"Key": "5x5",
+		"Value": "5x5"
 	},
 	{
-		"Key":"puzzleSpecks",
-		"Value":"Пазл"
+		"Key": "6x6",
+		"Value": "6x6"
 	},
 	{
-		"Key":"custonPuzzleSpecks",
-		"Value":"Пазл из своего изображения"
+		"Key": "7x7",
+		"Value": "7x7"
 	},
 	{
-		"Key":"changeTitle",
-		"Value":"Изменить вид плитки"
+		"Key": "difficult",
+		"Value": "Сложность:"
 	},
 	{
-		"Key":"changeFrontStyle",
-		"Value":"Изменить шрифт чисел"
+		"Key": "typeGame",
+		"Value": "Тип игры:"
 	},
 	{
-		"Key":"winInAllOrders",
-		"Value":"Разрешить победу при установке пятнашек в разном направлении порядка"
+		"Key": "classicSpecks",
+		"Value": "Классические пятнашки"
 	},
 	{
-		"Key":"start",
-		"Value":"Старт!"
+		"Key": "puzzleSpecks",
+		"Value": "Пазл"
 	},
 	{
-		"Key":"back",
-		"Value":"Назад"
+		"Key": "custonPuzzleSpecks",
+		"Value": "Пазл из своего изображения"
 	},
 	{
-		"Key":"wrnNewGame",
-		"Value":"Внимание! При нажатии кнопки старта - текущее сохранение будет утеряно!"
+		"Key": "changeTitle",
+		"Value": "Изменить вид плитки"
 	},
 	{
-		"Key":"changeImage",
-		"Value":"Изменить изображение"
+		"Key": "changeFrontStyle",
+		"Value": "Изменить шрифт чисел"
 	},
 	{
-		"Key":"useNumbers",
-		"Value":"Использовать цифры(упрощает решение)"
+		"Key": "winInAllOrders",
+		"Value": "Разрешить победу при установке пятнашек в разном направлении порядка"
 	},
 	{
-		"Key":"lastImages",
-		"Value":"Выбрать из 9 последних изображений"
+		"Key": "start",
+		"Value": "Старт!"
 	},
 	{
-		"Key":"defaultSettings",
-		"Value":"Настройки по умолчанию:"
+		"Key": "back",
+		"Value": "Назад"
 	},
 	{
-		"Key":"frequencyOfSave",
-		"Value":"Частота автосохранений:"
+		"Key": "wrnNewGame",
+		"Value": "Внимание! При нажатии кнопки старта - текущее сохранение будет утеряно!"
 	},
 	{
-		"Key":"everySwap",
-		"Value":"При каждом перемещении"
+		"Key": "changeImage",
+		"Value": "Изменить изображение"
 	},
 	{
-		"Key":"every3Swaps",
-		"Value":"Каждое 3ее перемещение"
+		"Key": "useNumbers",
+		"Value": "Использовать цифры(упрощает решение)"
 	},
 	{
-		"Key":"every5Swaps",
-		"Value":"Каждое 5ое перемещение"
+		"Key": "lastImages",
+		"Value": "Выбрать из 9 последних изображений"
 	},
 	{
-		"Key":"every10Swaps",
-		"Value":"Каждое 10ое перемещение"
+		"Key": "defaultSettings",
+		"Value": "Настройки по умолчанию:"
 	},
 	{
-		"Key":"every25Swaps",
-		"Value":"Каждые 25 перемещений"
+		"Key": "frequencyOfSave",
+		"Value": "Частота автосохранений:"
 	},
 	{
-		"Key":"onlyByButtonSave",
-		"Value":"Сохранять только при нажатии на кнопку"
+		"Key": "everySwap",
+		"Value": "При каждом перемещении"
 	},
 	{
-		"Key":"loadDefaultSettings",
-		"Value":"Обнулить настройки по умолчанию"
+		"Key": "every3Swaps",
+		"Value": "Каждое 3ее перемещение"
 	},
 	{
-		"Key":"clearLastCustomImages",
-		"Value":"Очистить буффер последних изображений"
+		"Key": "every5Swaps",
+		"Value": "Каждое 5ое перемещение"
 	},
 	{
-		"Key":"showGameMessages",
-		"Value":"Разрешить игре показывать уведомления"
+		"Key": "every10Swaps",
+		"Value": "Каждое 10ое перемещение"
 	},
 	{
-		"Key":"autoUpdate",
-		"Value":"Автоматическое обновление(только по Wi-Fi)"
+		"Key": "every25Swaps",
+		"Value": "Каждые 25 перемещений"
 	},
 	{
-		"Key":"autoPushError",
-		"Value":"Отправлять отчёт об ошибках"
+		"Key": "onlyByButtonSave",
+		"Value": "Сохранять только при нажатии на кнопку"
 	},
 	{
-		"Key":"totalStat",
-		"Value":"Общая статистика"
+		"Key": "loadDefaultSettings",
+		"Value": "Обнулить настройки по умолчанию"
 	},
 	{
-		"Key":"totalGamesStarted",
-		"Value":"Игр начато"
+		"Key": "clearLastCustomImages",
+		"Value": "Очистить буффер последних изображений"
 	},
 	{
-		"Key":"totalGamesCompleted",
-		"Value":"Игр завершенно"
+		"Key": "showGameMessages",
+		"Value": "Разрешить игре показывать уведомления"
 	},
 	{
-		"Key":"percentOfComplete",
-		"Value":"% завершенно"
+		"Key": "autoUpdate",
+		"Value": "Автоматическое обновление(только по Wi-Fi)"
 	},
 	{
-		"Key":"averageTime",
-		"Value":"Среднее время на игру"
+		"Key": "autoPushError",
+		"Value": "Отправлять отчёт об ошибках"
 	},
 	{
-		"Key":"averageSwaps",
-		"Value":"Среднее кол-во перестановок"
+		"Key": "totalStat",
+		"Value": "Общая статистика"
 	},
 	{
-		"Key":"bestTime",
-		"Value":"Лучшее время"
+		"Key": "totalGamesStarted",
+		"Value": "Игр начато"
 	},
 	{
-		"Key":"bestSwaps",
-		"Value":"Наименьшее кол-во перестановок"
+		"Key": "totalGamesCompleted",
+		"Value": "Игр завершенно"
 	},
 	{
-		"Key":"сlearCurrentStat",
-		"Value":"Очистить текущую статистику"
+		"Key": "percentOfComplete",
+		"Value": "% завершенно"
 	},
 	{
-		"Key":"clearAllStat",
-		"Value":"Очистить всю статистику"
+		"Key": "averageTime",
+		"Value": "Среднее время на игру"
 	},
 	{
-		"Key":"toMenu",
-		"Value":"В меню"
+		"Key": "averageSwaps",
+		"Value": "Среднее кол-во перестановок"
+	},
+	{
+		"Key": "bestTime",
+		"Value": "Лучшее время"
+	},
+	{
+		"Key": "bestSwaps",
+		"Value": "Наименьшее кол-во перестановок"
+	},
+	{
+		"Key": "сlearCurrentStat",
+		"Value": "Очистить текущую статистику"
+	},
+	{
+		"Key": "clearAllStat",
+		"Value": "Очистить всю статистику"
+	},
+	{
+		"Key": "toMenu",
+		"Value": "В меню"
 	}
 ]

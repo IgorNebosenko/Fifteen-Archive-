@@ -1,186 +1,206 @@
 [
 	{
-		"Key":"newGame",
-		"Value":"New game"
+		"Key": "newGame",
+		"Value": "New game"
 	},
 	{
-		"Key":"continueGame",
-		"Value":"Continue game"
-	},
-		{
-		"Key":"settings",
-		"Value":"Settings"
+		"Key": "continueGame",
+		"Value": "Continue game"
 	},
 	{
-		"Key":"stat",
-		"Value":"Statictics"
+		"Key": "settings",
+		"Value": "Settings"
 	},
 	{
-		"Key":"creator",
-		"Value":"Credit"
+		"Key": "stat",
+		"Value": "Statictics"
 	},
 	{
-		"Key":"supportProject",
-		"Value":"Support a project"
+		"Key": "creator",
+		"Value": "Credit"
 	},
 	{
-		"Key":"exit",
-		"Value":"Exit"
+		"Key": "supportProject",
+		"Value": "Support a project"
 	},
 	{
-		"Key":"size",
-		"Value":"Size:"
+		"Key": "exit",
+		"Value": "Exit"
 	},
 	{
-		"Key":"difficult",
-		"Value":"Difficult:"
+		"Key": "size",
+		"Value": "Size:"
 	},
 	{
-		"Key":"typeGame",
-		"Value":"Type of the game:"
+		"Key": "3x3",
+		"Value": "3x3"
 	},
 	{
-		"Key":"classicSpecks",
-		"Value":"Classic specs"
+		"Key": "4x4",
+		"Value": "4x4"
 	},
 	{
-		"Key":"puzzleSpecks",
-		"Value":"Puzzle"
+		"Key": "5x5",
+		"Value": "5x5"
 	},
 	{
-		"Key":"custonPuzzleSpecks",
-		"Value":"Puzzle with custom image"
+		"Key": "6x6",
+		"Value": "6x6"
 	},
 	{
-		"Key":"changeTitle",
-		"Value":"Change title view"
+		"Key": "7x7",
+		"Value": "7x7"
 	},
 	{
-		"Key":"changeFrontStyle",
-		"Value":"Изменить font style"
+		"Key": "difficult",
+		"Value": "Difficult:"
 	},
 	{
-		"Key":"winInAllOrders",
-		"Value":"Allow victory when installing specks in different directions"
+		"Key": "typeGame",
+		"Value": "Type of the game:"
 	},
 	{
-		"Key":"start",
-		"Value":"Start!"
+		"Key": "classicSpecks",
+		"Value": "Classic specs"
 	},
 	{
-		"Key":"back",
-		"Value":"Back"
+		"Key": "puzzleSpecks",
+		"Value": "Puzzle"
 	},
 	{
-		"Key":"wrnNewGame",
-		"Value":"Warning! If you're starting new game - previous save will be lost!"
+		"Key": "custonPuzzleSpecks",
+		"Value": "Puzzle with custom image"
 	},
 	{
-		"Key":"changeImage",
-		"Value":"Change image"
+		"Key": "changeTitle",
+		"Value": "Change title view"
 	},
 	{
-		"Key":"useNumbers",
-		"Value":"Use numbers(easier)"
+		"Key": "changeFrontStyle",
+		"Value": "Изменить font style"
 	},
 	{
-		"Key":"lastImages",
-		"Value":"Select from last 9 images"
+		"Key": "winInAllOrders",
+		"Value": "Allow victory when installing specks in different directions"
 	},
 	{
-		"Key":"defaultSettings",
-		"Value":"Default settings:"
+		"Key": "start",
+		"Value": "Start!"
 	},
 	{
-		"Key":"frequencyOfSave",
-		"Value":"Frequency of save:"
+		"Key": "back",
+		"Value": "Back"
 	},
 	{
-		"Key":"everySwap",
-		"Value":"Every swap"
+		"Key": "wrnNewGame",
+		"Value": "Warning! If you're starting new game - previous save will be lost!"
 	},
 	{
-		"Key":"every3Swaps",
-		"Value":"Every 3rd swap"
+		"Key": "changeImage",
+		"Value": "Change image"
 	},
 	{
-		"Key":"every5Swaps",
-		"Value":"Every 5th swap"
+		"Key": "useNumbers",
+		"Value": "Use numbers(easier)"
 	},
 	{
-		"Key":"every10Swaps",
-		"Value":"Every 10th swap"
+		"Key": "lastImages",
+		"Value": "Select from last 9 images"
 	},
 	{
-		"Key":"every25Swaps",
-		"Value":"Every 25 swaps"
+		"Key": "defaultSettings",
+		"Value": "Default settings:"
 	},
 	{
-		"Key":"onlyByButtonSave",
-		"Value":"Save only by press button"
+		"Key": "frequencyOfSave",
+		"Value": "Frequency of save:"
 	},
 	{
-		"Key":"loadDefaultSettings",
-		"Value":"Reset to defaults"
+		"Key": "everySwap",
+		"Value": "Every swap"
 	},
 	{
-		"Key":"clearLastCustomImages",
-		"Value":"ОClear buffer of last used images"
+		"Key": "every3Swaps",
+		"Value": "Every 3rd swap"
 	},
 	{
-		"Key":"showGameMessages",
-		"Value":"Allow game to show notifications"
+		"Key": "every5Swaps",
+		"Value": "Every 5th swap"
 	},
 	{
-		"Key":"autoUpdate",
-		"Value":"Autoupdate(only by Wi-Fi)"
+		"Key": "every10Swaps",
+		"Value": "Every 10th swap"
 	},
 	{
-		"Key":"autoPushError",
-		"Value":"Send bug log"
+		"Key": "every25Swaps",
+		"Value": "Every 25 swaps"
 	},
 	{
-		"Key":"totalStat",
-		"Value":"Total statistic"
+		"Key": "onlyByButtonSave",
+		"Value": "Save only by press button"
 	},
 	{
-		"Key":"totalGamesStarted",
-		"Value":"Games started"
+		"Key": "loadDefaultSettings",
+		"Value": "Reset to defaults"
 	},
 	{
-		"Key":"totalGamesCompleted",
-		"Value":"Games completed"
+		"Key": "clearLastCustomImages",
+		"Value": "ОClear buffer of last used images"
 	},
 	{
-		"Key":"percentOfComplete",
-		"Value":"% completed"
+		"Key": "showGameMessages",
+		"Value": "Allow game to show notifications"
 	},
 	{
-		"Key":"averageTime",
-		"Value":"Average time"
+		"Key": "autoUpdate",
+		"Value": "Autoupdate(only by Wi-Fi)"
 	},
 	{
-		"Key":"averageSwaps",
-		"Value":"Average swaps"
+		"Key": "autoPushError",
+		"Value": "Send bug log"
 	},
 	{
-		"Key":"bestTime",
-		"Value":"Best time"
+		"Key": "totalStat",
+		"Value": "Total statistic"
 	},
 	{
-		"Key":"bestSwaps",
-		"Value":"Lowest number of swaps"
+		"Key": "totalGamesStarted",
+		"Value": "Games started"
 	},
 	{
-		"Key":"сlearCurrentStat",
-		"Value":"Clear current statistics"
+		"Key": "totalGamesCompleted",
+		"Value": "Games completed"
 	},
 	{
-		"Key":"clearAllStat",
-		"Value":"Clear all statictics"
+		"Key": "percentOfComplete",
+		"Value": "% completed"
 	},
 	{
-		"Key":"toMenu",
-		"Value":"To menu"
+		"Key": "averageTime",
+		"Value": "Average time"
+	},
+	{
+		"Key": "averageSwaps",
+		"Value": "Average swaps"
+	},
+	{
+		"Key": "bestTime",
+		"Value": "Best time"
+	},
+	{
+		"Key": "bestSwaps",
+		"Value": "Lowest number of swaps"
+	},
+	{
+		"Key": "сlearCurrentStat",
+		"Value": "Clear current statistics"
+	},
+	{
+		"Key": "clearAllStat",
+		"Value": "Clear all statictics"
+	},
+	{
+		"Key": "toMenu",
+		"Value": "To menu"
 	}
 ]

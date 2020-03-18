@@ -10,7 +10,7 @@ namespace Game.Additional
         /// <summary>
         /// Property which contains name of global object with MultiLangCore
         /// </summary>
-        static MultiLangCore core = null;
+        public static MultiLangCore core = null;
 
         /// <summary>
         /// String with key
