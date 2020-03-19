@@ -56,6 +56,18 @@
 		"Value": "Difficult:"
 	},
 	{
+		"Key": "easy",
+		"Value": "Легко"
+	},
+	{
+		"Key": "medium",
+		"Value": "Средне"
+	},
+	{
+		"Key": "hard",
+		"Value": "Сложно"
+	},
+	{
 		"Key": "typeGame",
 		"Value": "Type of the game:"
 	},
@@ -93,7 +105,7 @@
 	},
 	{
 		"Key": "wrnNewGame",
-		"Value": "Warning! If you're starting new game - previous save will be lost!"
+		"Value": "Warning! If you're starting new game - current save will be lost!"
 	},
 	{
 		"Key": "changeImage",

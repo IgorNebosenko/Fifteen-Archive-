@@ -27,12 +27,15 @@ namespace Game.UI
 
             for (int i = 0; i < ListText.Length; ++i)
             {
-                if (MultiLang.core == null)
-                    Debug.Log("NULL");
-
                 dd.options.Add(new TMP_Dropdown.OptionData(
                     MultiLang.core.GetText(ListText[i]))) ;
             }
+            Debug.LogError("Indexes in drop downs must be load from settings");
+
+            if (ListText.Length > 1) //<-Sometimes value with id 0 - don't selected!
+                dd.value = 1;
+            else //Dropdown must have more than 1 value
+                Debug.LogWarning("DropDown has less than 2 variants!");
             dd.value = selectedIndex;
         }
     }

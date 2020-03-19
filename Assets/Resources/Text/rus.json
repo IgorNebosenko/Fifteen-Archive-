@@ -56,6 +56,18 @@
 		"Value": "Сложность:"
 	},
 	{
+		"Key": "easy",
+		"Value": "Легко"
+	},
+	{
+		"Key": "medium",
+		"Value": "Средне"
+	},
+	{
+		"Key": "hard",
+		"Value": "Сложно"
+	},
+	{
 		"Key": "typeGame",
 		"Value": "Тип игры:"
 	},
