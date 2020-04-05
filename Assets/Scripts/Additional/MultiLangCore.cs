@@ -186,6 +186,18 @@ namespace Game.Additional
             return textPairs[id];
         }
 
+        /// <summary>
+        /// Returns list with languages name
+        /// </summary>
+        /// <returns>List</returns>
+        public List<string> GetLangList()
+        {
+            List<string> lst = new List<string>();
+            foreach (LangData ld in lstData)
+                lst.Add(ld.displayName);
+            return lst;
+        }
+
         //Methods only for debug
 #if UNITY_EDITOR
         /// <summary>

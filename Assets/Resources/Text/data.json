@@ -1,1 +1,12 @@
-[{"displayName":"Русский","fileName":"rus","langID":30},{"displayName":"English","fileName":"eng","langID":10}]
+[
+  {
+    "displayName": "Русский",
+    "fileName": "rus",
+    "langID": 30
+  },
+  {
+    "displayName": "English",
+    "fileName": "eng",
+    "langID": 10
+  }
+]

@@ -152,6 +152,14 @@
 		"Value": "Save only by press button"
 	},
 	{
+		"Key": "saveOnExit",
+		"Value": "Save on exit from game"
+	},
+	{
+		"Key": "selectLang",
+		"Value": "Language:"
+	},
+	{
 		"Key": "loadDefaultSettings",
 		"Value": "Reset to defaults"
 	},

@@ -152,7 +152,15 @@
 		"Value": "Сохранять только при нажатии на кнопку"
 	},
 	{
-		"Key": "loadDefaultSettings",
+		"Key": "saveOnExit",
+		"Value": "Сохранять при выходе из игры"
+	},
+	{
+		"Key": "selectLang",
+		"Value": "Язык:"
+	},
+	{
+		"Key": "loadDefaultSettings", 
 		"Value": "Обнулить настройки по умолчанию"
 	},
 	{
