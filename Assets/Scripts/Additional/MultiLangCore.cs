@@ -5,6 +5,8 @@ using System.Runtime.Serialization.Json;
 using UnityEngine;
 using Game.Exceptions;
 using Game.Interfaces;
+using Game.IO;
+using System.Threading.Tasks;
 
 namespace Game.Additional
 {
@@ -18,7 +20,7 @@ namespace Game.Additional
         /// Class of language data
         /// </summary>
         [Serializable]
-        class LangData
+        public class LangData
         {
             /// <summary>
             /// Id of system language
@@ -88,7 +90,7 @@ namespace Game.Additional
         /// <summary>
         /// Method which calls at first
         /// </summary>
-        void Start()
+        async void Start()
         {
             IsLoaded = false;
 
@@ -100,8 +102,15 @@ namespace Game.Additional
 
             textFieldsContainer = new List<MultiLang>();
 
-            //MakeDataFile(); <-Only for debug
             LoadLangData();
+
+            //MakeDataFile(); <-Only for debug
+            SettingsCore sc =  gameObject.GetComponent<SettingsCore>();
+            if (sc == null)
+                throw new CantFindGlobalObj("Can't find SettingsCore!");
+            while (!sc.IsLoaded)
+                await Task.Delay(10);
+
             CheckPropertyLang();
             //MakeLangFiles(); <- Only for debug
             LoadLangDictionary();
@@ -125,12 +134,15 @@ namespace Game.Additional
         /// </summary>
         void CheckPropertyLang()
         {
+            SettingsCore sc = new SettingsCore();
+            sc = gameObject.GetComponent<SettingsCore>();
+
             foreach (LangData ld in lstData)
             {
-                if (ld.langID == Properties.CurrLang)
+                if (ld.langID == sc.CurrentLanguage.langID)
                     return;
             }
-            Properties.CurrLang = SystemLanguage.English;
+            sc.CurrentLanguage.langID = SystemLanguage.English;
         }
 
         /// <summary>
@@ -143,9 +155,11 @@ namespace Game.Additional
             textPairs.Clear();
 
             string path = null;
+            SettingsCore sc = gameObject.GetComponent<SettingsCore>();
+
             foreach (LangData ld in lstData)
             {
-                if (ld.langID == Properties.CurrLang)
+                if (ld.langID == sc.CurrentLanguage.langID)
                 {
                     path = ld.fileName;
                     break;
@@ -196,6 +210,17 @@ namespace Game.Additional
             foreach (LangData ld in lstData)
                 lst.Add(ld.displayName);
             return lst;
+        }
+
+        /// <summary>
+        /// Gets list of language data
+        /// </summary>
+        public List<LangData> LanguageDataList
+        { 
+            get
+            {
+                return lstData;
+            }
         }
 
         //Methods only for debug
