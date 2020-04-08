@@ -22,6 +22,11 @@ namespace Game.IO
         public class SettingsContainer
         {
             /// <summary>
+            /// String with versions
+            /// </summary>
+            public string version;
+
+            /// <summary>
             /// Size of game field. As default - 4x4
             /// </summary>
             public ESize size = ESize._4x4;
@@ -55,6 +60,19 @@ namespace Game.IO
             public bool pushErrors = true;
 
             /// <summary>
+            /// Defines is user allow win in diffrent destenations for classic
+            /// </summary>
+            public bool allowDiffrentDestenationWin = false;
+            /// <summary>
+            /// Defines is user allow using numbers at mode "Puzzle"
+            /// </summary>
+            public bool allowUsingNumbersPuzzle = false;
+            /// <summary>
+            /// Defines is user allow using numbers at mode "custom image"
+            /// </summary>
+            public bool allowUsingNumbersCustomImage = false;
+
+            /// <summary>
             /// Current language. This field must be defines on game
             /// </summary>
             public LangData currentLang;
@@ -64,7 +82,7 @@ namespace Game.IO
         /// <summary>
         /// Instance of settings container
         /// </summary>
-        SettingsContainer container;
+        //SettingsContainer container;
 
         /// <summary>
         /// Defines is Settings container load
@@ -94,13 +112,15 @@ namespace Game.IO
         {
             get 
             {
-                return container.currentLang;
+                return Container.currentLang;
             }
             set
             {
-                container.currentLang = value;
+                Container.currentLang = value;
             }
         }
+
+        public SettingsContainer Container { get; private set; }
 
         /// <summary>
         /// Path to file settings.json
@@ -130,8 +150,9 @@ namespace Game.IO
             if (!IsSettingsFileExists) //Check is file with settings exists
             {
                 ShowMessageAboutCust = true;
-                container = new SettingsContainer();
+                Container = new SettingsContainer();
                 GetSystemLang();
+                Container.version = Application.version;
                 WriteToFile();
 
             }
@@ -139,6 +160,7 @@ namespace Game.IO
             {
                 ShowMessageAboutCust = false;
                 ReadFromFile();
+                Debug.LogWarning("Realize control version!");
             }
             IsLoaded = true;
         }
@@ -172,7 +194,7 @@ namespace Game.IO
                     //If founded russian language data
                     if (ld.langID == SystemLanguage.Russian)
                     {
-                        container.currentLang = ld;
+                        Container.currentLang = ld;
                         return;
                     }
                 }
@@ -186,7 +208,7 @@ namespace Game.IO
                     //If founded russian language data
                     if (ld.langID == SystemLanguage.English)
                     {
-                        container.currentLang = ld;
+                        Container.currentLang = ld;
                         return;
                     }
                 }
@@ -205,7 +227,7 @@ namespace Game.IO
             {
                 await Task.Run(() =>
                 {
-                    serializer.WriteObject(fs, container);
+                    serializer.WriteObject(fs, Container);
                 });
             }
         }
@@ -220,9 +242,9 @@ namespace Game.IO
                 Debug.LogWarning("Settings file is not exists! This file will be " +
                     "creted with default settings if it's null");
                 
-                if (container != null)
+                if (Container != null)
                     return;
-                container = new SettingsContainer();
+                Container = new SettingsContainer();
                 GetSystemLang();
                 //Finaly - write created settings
                 WriteToFile();
@@ -232,7 +254,7 @@ namespace Game.IO
             using (FileStream fs =
                 new FileStream(PathToFileSettings, FileMode.Open, FileAccess.Read))
             {
-                container = serializer.ReadObject(fs) as SettingsContainer;
+                Container = serializer.ReadObject(fs) as SettingsContainer;
             }
         }
     }

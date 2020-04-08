@@ -134,8 +134,7 @@ namespace Game.Additional
         /// </summary>
         void CheckPropertyLang()
         {
-            SettingsCore sc = new SettingsCore();
-            sc = gameObject.GetComponent<SettingsCore>();
+            SettingsCore sc = gameObject.GetComponent<SettingsCore>();
 
             foreach (LangData ld in lstData)
             {

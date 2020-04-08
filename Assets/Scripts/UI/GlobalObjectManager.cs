@@ -1,9 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using Game.Interfaces;
 using System.Threading.Tasks;
 using Game.IO;
+using Game.Exceptions;
 
 namespace Game.UI
 {
@@ -65,11 +65,19 @@ namespace Game.UI
             SettingsCore sc = gameObject.GetComponent<SettingsCore>();
             if (sc.ShowMessageAboutCust)
             {
+                if (Settings == null)
+                    throw new CantFindUIElement("Can't find Settings UI!");
                 Settings.SetActive(true);
+                if (FirstStartScreen == null)
+                    throw new CantFindUIElement("Can't find first start screen on UI");
                 FirstStartScreen.SetActive(true);
             }
             else
+            {
+                if (MainWindow == null)
+                    throw new CantFindUIElement("Can't find Main Window UI");
                 MainWindow.SetActive(true);
+            }
         }
     }
 }

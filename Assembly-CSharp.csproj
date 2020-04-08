@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\Exceptions\CantFindGlobalObj.cs" />
     <Compile Include="Assets\Scripts\Exceptions\CantFindLangInAssets.cs" />
     <Compile Include="Assets\Scripts\Exceptions\CantFindObject.cs" />
+    <Compile Include="Assets\Scripts\Exceptions\CantFindUIElement.cs" />
     <Compile Include="Assets\Scripts\Exceptions\NoTextFileException.cs" />
     <Compile Include="Assets\Scripts\IO\SettingsCore.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IGlobalObject.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Assets\Scripts\UI\ExitGame.cs" />
     <Compile Include="Assets\Scripts\UI\GlobalObjectManager.cs" />
     <Compile Include="Assets\Scripts\UI\MakeDDListLang.cs" />
+    <Compile Include="Assets\Scripts\UI\SettingsNewGame.cs" />
     <Compile Include="Assets\Scripts\UI\ToggleSelect.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
