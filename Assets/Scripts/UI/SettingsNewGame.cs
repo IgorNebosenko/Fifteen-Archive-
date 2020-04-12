@@ -4,6 +4,7 @@ using Game.UI;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Game.Additional;
 
 namespace Game.UI
 {
@@ -26,6 +27,9 @@ namespace Game.UI
         /// Reference to dropdown of difficult
         /// </summary>
         public TMP_Dropdown difficult;
+
+        public AddDDListRaw ddSize;
+        public AddDDListRaw ddDifficult;
 
         /// <summary>
         /// Toggle which define classic mode
@@ -58,6 +62,11 @@ namespace Game.UI
         void Start()
         {
             CheckUIElements();
+
+            //Load to AddDDList to fix errors
+            ddSize.selectedIndex = (int)core.Container.size;
+            ddDifficult.selectedIndex = (int)core.Container.difficult;
+
             SetUIElements();
         }
 
@@ -111,6 +120,56 @@ namespace Game.UI
         {
             size.value = (int)core.Container.size;
             difficult.value = (int)core.Container.difficult;
+
+            switch (core.Container.typeGame)
+            {
+                case ETypeGame.Classic:
+                    toggleModeClassic.isOn = true;
+                    break;
+                case ETypeGame.Puzzle:
+                    toggleModePuzzle.isOn = true;
+                    break;
+                case ETypeGame.PuzzleImage:
+                    toggleModeCustomPuzzle.isOn = true;
+                    break;
+            }
+
+            toggleWinInAllDestenations.isOn =
+                core.Container.allowDiffrentDestenationWin;
+            toggleUseNumbersPuzzle.isOn =
+                core.Container.allowUsingNumbersPuzzle;
+            toggleUseNumbersAtCustomImage.isOn =
+                core.Container.allowUsingNumbersCustomImage;
+        }
+
+        /// <summary>
+        /// Method of change property which defines is need win in all destenations
+        /// </summary>
+        /// <param name="state">State</param>
+        public void ChangeWinAllDestenations(bool state)
+        {
+            core.Container.allowDiffrentDestenationWin = state;
+            core.WriteToFile();
+        }
+
+        /// <summary>
+        /// Method of change property which defines using numbers at puzzle
+        /// </summary>
+        /// <param name="state"></param>
+        public void ChangeUseNumbersPuzzle(bool state)
+        {
+            core.Container.allowUsingNumbersPuzzle = state;
+            core.WriteToFile();
+        }
+
+        /// <summary>
+        /// Method of change property which defines using numbers at custom image puzzle
+        /// </summary>
+        /// <param name="state">State</param>
+        public void ChangeUseNumbersCustomPuzzle(bool state)
+        {
+            core.Container.allowUsingNumbersCustomImage = state;
+            core.WriteToFile();
         }
     }
 }

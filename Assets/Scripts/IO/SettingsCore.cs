@@ -80,11 +80,6 @@ namespace Game.IO
         }
 
         /// <summary>
-        /// Instance of settings container
-        /// </summary>
-        //SettingsContainer container;
-
-        /// <summary>
         /// Defines is Settings container load
         /// </summary>
         public bool IsLoaded { get; set; }
@@ -220,7 +215,7 @@ namespace Game.IO
         /// <summary>
         /// Write settings to file
         /// </summary>
-        async void WriteToFile()
+        public async void WriteToFile()
         {
             using (FileStream fs =
                 new FileStream(PathToFileSettings, FileMode.Create, FileAccess.Write))
@@ -235,7 +230,7 @@ namespace Game.IO
         /// <summary>
         /// Read settings from file
         /// </summary>
-        void ReadFromFile()
+        public void ReadFromFile()
         {
             if (!IsSettingsFileExists)
             {
