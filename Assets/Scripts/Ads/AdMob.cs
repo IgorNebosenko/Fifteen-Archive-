@@ -18,21 +18,22 @@ namespace Game.Ads
         /// <summary>
         /// Ad ID for android
         /// </summary>
-        const string androidID = "ca-app-pub-5888241900841622~5211793766";
+        const string androidID = "ca-app-pub-1130867258699163~6520774498";
         /// <summary>
         /// Ad ID for IOS
         /// </summary>
-        const string iosID = "ca-app-pub-5888241900841622~5211793766";
+        const string iosID = "ca-app-pub-1130867258699163~6520774498";
 
         /// <summary>
         /// Banner ID for android
         /// </summary>
-        const string androidBannerID = "ca-app-pub-5888241900841622/4946363594";
+        const string androidBannerID = "ca-app-pub-1130867258699163/8559973847";
         /// <summary>
         /// Banner ID for IOS
         /// </summary>
-        const string iosBannerID = "ca-app-pub-5888241900841622/4946363594";
+        const string iosBannerID = "ca-app-pub-1130867258699163/8559973847";
 
+        public bool EnableShow { get; set; }
 
         void Start()
         {

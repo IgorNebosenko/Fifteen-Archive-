@@ -128,6 +128,7 @@
     <Compile Include="Assets\Scripts\Exceptions\CantFindObject.cs" />
     <Compile Include="Assets\Scripts\Exceptions\CantFindUIElement.cs" />
     <Compile Include="Assets\Scripts\Exceptions\NoTextFileException.cs" />
+    <Compile Include="Assets\Scripts\Interfaces\IAd.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IGlobalObject.cs" />
     <Compile Include="Assets\Scripts\IO\SettingsCore.cs" />
     <Compile Include="Assets\Scripts\UI\AddDDListRaw.cs" />

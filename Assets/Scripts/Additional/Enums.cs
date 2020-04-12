@@ -44,4 +44,28 @@
         Every25Swaps,
         onlyByButtonSave
     }
+
+    /// <summary>
+    /// Status of ad
+    /// </summary>
+    public enum EAdStatus : byte
+    { 
+        Loads,
+        Failed,
+        Loaded,
+        Shows,
+        NoEthernet
+    }
+
+    /// <summary>
+    /// Defines which types of ads provides, and what current ad type
+    /// </summary>
+    public enum ETypesAd : byte
+    { 
+        None = 0,
+        Banner = 1 << 0,
+        Image = 1 << 1,
+        Video = 1 << 2,
+        VideoGreetings = 1 << 3
+    }
 }
