@@ -27,11 +27,11 @@ namespace Game.Ads
         /// <summary>
         /// Banner ID for android
         /// </summary>
-        const string androidBannerID = "ca-app-pub-5888241900841622/2198811130";
+        const string androidBannerID = "ca-app-pub-5888241900841622/4946363594";
         /// <summary>
         /// Banner ID for IOS
         /// </summary>
-        const string iosBannerID = "ca-app-pub-5888241900841622/2198811130";
+        const string iosBannerID = "ca-app-pub-5888241900841622/4946363594";
 
 
         void Start()
